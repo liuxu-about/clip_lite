@@ -1,0 +1,24 @@
+# macOS
+.DS_Store
+
+# Swift Package Manager
+.build/
+.swiftpm/
+Package.resolved
+
+# Xcode user/local state
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Runtime logs and temp files
+*.log
+*.tmp
+
+# Local assistant/session artifacts
+.claude/
+.vscode/
+
+# Packaged app artifacts
+dist/
