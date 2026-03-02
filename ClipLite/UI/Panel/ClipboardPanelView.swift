@@ -152,7 +152,7 @@ struct ClipboardPanelView: View {
             _ = viewModel.select(index: index)
         }
         .onHover { isHovering in
-            handleHover(isHovering: isHovering, itemID: item.id)
+            handleHover(isHovering: isHovering, itemID: item.id, index: index)
         }
         .simultaneousGesture(TapGesture(count: 2).onEnded {
             viewModel.select(index: index)
@@ -489,12 +489,13 @@ struct ClipboardPanelView: View {
         colorScheme == .dark ? dark : light
     }
 
-    private func handleHover(isHovering: Bool, itemID: UUID) {
+    private func handleHover(isHovering: Bool, itemID: UUID, index: Int) {
         if isHovering {
             guard !isHoverSelectionSuppressed else {
                 return
             }
             hoveredItemID = itemID
+            _ = viewModel.select(index: index)
             schedulePreview(for: itemID, requireHoverMatch: true)
             return
         }
