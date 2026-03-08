@@ -35,6 +35,10 @@ Create an unsigned app bundle and zip artifact locally:
 ./scripts/package_app.sh
 ```
 
+## Documentation
+
+- `docs/architecture.md` — current architecture, storage model, permissions, and known limitations
+
 ## Project Layout
 
 - `ClipLite/App` — app lifecycle and coordination
@@ -43,7 +47,7 @@ Create an unsigned app bundle and zip artifact locally:
 - `ClipLite/Models` — shared models
 - `ClipLite/Utilities` — helpers and supporting utilities
 - `Tests/ClipLiteTests` — XCTest coverage
-- `docs/` — MVP notes and development progress
+- `docs/` — project documentation
 
 ## Notes
 
