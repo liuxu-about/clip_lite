@@ -19,6 +19,7 @@ DerivedData/
 # Local assistant/session artifacts
 .claude/
 .vscode/
+CLAUDE.md
 
 # Packaged app artifacts
 dist/
